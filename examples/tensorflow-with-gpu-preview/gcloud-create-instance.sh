@@ -2,7 +2,7 @@ NAME=$1
 shift
 gcloud compute instances create $NAME \
 --custom-memory=250GB  \
---custom-cpu=8  \
+--custom-cpu=16  \
 --boot-disk-auto-delete  \
 --boot-disk-size=200GB  \
 --image=projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20190514  \
