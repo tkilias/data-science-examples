@@ -93,7 +93,7 @@
     # Type of volume: 'data' | 'archive'
     Type = data
     # Volume size (e. g. '1 TiB')
-    Size = 90 GiB
+    Size = 140 GiB
     # Name of the disk to be used for this volume.
     # This disk must exist on all volume nodes.
     Disk = disk1
@@ -118,12 +118,13 @@
     # The EXASOL version to be used for this database
     Version = 6.1.3
     # Memory size over all nodes (e. g. '1 TiB')
-    MemSize = 28 GiB
+    MemSize = 200 GiB
     Port = 8888
     Nodes = 11
     Owner = 500 : 500
     NumMasterNodes = 1
     DataVolume = DataVolume1
+    Params = -maxProcessHeapMemory=76800 -maxSystemHeapMemory=122880
     # JDBC driver configuration
     [[JDBC]]
         # BucketFS that contains the JDBC driver
