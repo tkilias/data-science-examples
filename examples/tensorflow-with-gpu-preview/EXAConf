@@ -118,13 +118,13 @@
     # The EXASOL version to be used for this database
     Version = 6.1.3
     # Memory size over all nodes (e. g. '1 TiB')
-    MemSize = 200 GiB
+    MemSize = 140 GiB
     Port = 8888
     Nodes = 11
     Owner = 500 : 500
     NumMasterNodes = 1
     DataVolume = DataVolume1
-    Params = -maxProcessHeapMemory=76800 -maxSystemHeapMemory=122880
+    Params = -maxProcessHeapMemory=61440 -maxSystemHeapMemory=92160
     # JDBC driver configuration
     [[JDBC]]
         # BucketFS that contains the JDBC driver
